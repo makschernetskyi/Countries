@@ -1,11 +1,14 @@
 import React from 'react';
-import store from 'store';
-import { Provider } from 'react-redux';
 import {
-  BrowserRouter,
+  BrowserRouter as Router,
   Switch,
   Route,
 } from 'react-router-dom';
+
+import { Countries } from "components/Countries";
+
+import {Country} from 'components/Country'
+
 
 const NoMatch = () => (
   <div>
@@ -14,13 +17,15 @@ const NoMatch = () => (
 );
 
 const App = () => (
-  <BrowserRouter>
-    <Provider store={store}>
-      <Switch>
+  <Router>
+    <Switch>
+
+        <Route path="/" component={Countries} exact />
+        <Route path="/info/:countryName" component={Country}/>
+
         <Route component={NoMatch} />
-      </Switch>
-    </Provider>
-  </BrowserRouter>
+    </Switch>
+  </Router>
 );
 
 export { App };
