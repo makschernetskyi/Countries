@@ -120,10 +120,10 @@ module.exports={};
 },{"react":"HdMw","./Country.scss":"5OD9"}],"DK6K":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),Object.defineProperty(exports,"Country",{enumerable:!0,get:function(){return e.Country}});var e=require("./Country");
 },{"./Country":"uu0C"}],"0BJs":[function(require,module,exports) {
-"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.App=void 0;var e=n(require("react")),t=require("react-router-dom"),r=require("../Countries"),u=require("../Country");function n(e){return e&&e.__esModule?e:{default:e}}var o=function(){return e.default.createElement("div",null,"Page not found")},a=function(){return e.default.createElement(t.BrowserRouter,null,e.default.createElement(t.Switch,null,e.default.createElement(t.Route,{path:"/",component:r.Countries,exact:!0}),e.default.createElement(t.Route,{path:"/info/:countryName",component:u.Country}),e.default.createElement(t.Route,{component:o})))};exports.App=a;
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.App=void 0;var e=n(require("react")),t=require("react-router-dom"),r=require("../Countries"),u=require("../Country");function n(e){return e&&e.__esModule?e:{default:e}}var o=function(){return e.default.createElement("div",null,"Page not found")},a=function(){return e.default.createElement(t.BrowserRouter,null,e.default.createElement(t.Switch,null,e.default.createElement(t.Route,{path:"/",component:r.Countries,exact:!0}),e.default.createElement(t.Route,{path:"/info/:countryName",component:u.Country,exact:!0}),e.default.createElement(t.Route,{component:o})))};exports.App=a;
 },{"react":"HdMw","react-router-dom":"pvo3","../Countries":"HQa1","../Country":"DK6K"}],"l9Oy":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),Object.defineProperty(exports,"App",{enumerable:!0,get:function(){return e.App}});var e=require("./App");
 },{"./App":"0BJs"}],"H99C":[function(require,module,exports) {
 "use strict";var e=u(require("react")),r=u(require("react-dom")),t=require("./components/App");function u(e){return e&&e.__esModule?e:{default:e}}require("./styles/main.scss"),r.default.render(e.default.createElement(t.App,null),document.getElementById("app"));
 },{"react":"HdMw","react-dom":"X9zx","./components/App":"l9Oy","./styles/main.scss":"5OD9"}]},{},["H99C"], null)
-//# sourceMappingURL=/Countries/src.d925e2b1.js.map
+//# sourceMappingURL=/Countries/src.f801f7ce.js.map
