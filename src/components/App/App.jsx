@@ -17,11 +17,11 @@ const NoMatch = () => (
 );
 
 const App = () => (
-  <Router>
+  <Router basename={process.env.PUBLIC_URL}>
     <Switch>
 
         <Route path="/" component={Countries} exact />
-        <Route path="/info/:countryName" component={Country}/>
+        <Route path="/info/:countryName" component={Country} exact/>
 
         <Route component={NoMatch} />
     </Switch>
